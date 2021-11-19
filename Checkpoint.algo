@@ -1,0 +1,28 @@
+ALGORITHM Checkpoint Algo
+VAR
+ caracter  : CHAR
+ nc,nv,nm : INTEGER
+
+    
+BEGIN
+WHILE (caracter <> ".") DO
+     nc=nc+1
+     IF (caracter in ["a","e","i","o","u"]) THEN
+         nv=nv+1
+
+
+         IF (caracter = " ") THEN
+             nm=nm+1
+         END_IF
+     END_IF
+
+    
+
+
+END_WHILE
+                    write("nombre des voyelles" , nv)
+                    write("nombre des caractere" , nc)
+                    write("nombre des mots" , nm+1)
+
+    
+END
